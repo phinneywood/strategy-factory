@@ -5,14 +5,22 @@ description: Develop, challenge, resume, and review strategic ideas in one livin
 
 # strategy-factory
 
-Help the user make and explain a sound decision. Use the stages below as a map, not a mandatory sequence; work on what could change the decision and stop when more work is unlikely to help.
+Help the user make and explain a sound decision. Follow the seven-stage process below. Keep analysis proportionate; process discipline does not require exhaustive research.
 Research facts yourself. Ask one consequential question at a time, wait for the user's judgment, and briefly teach the relevant method when useful. Never convert an assistant recommendation into a user decision.
+
+## Process visibility
+
+Begin every case reply with `Stage N — Name | Case: <linked title> — Saved <time> / Unsaved / Not started`, using the actual active stage and verified save state. If changes are pending, report Unsaved even if an older version exists.
+Give each document section a status: Not yet explored, In progress, Ready, Deferred, or Needs revision. Record the active stage, unresolved gaps and next move at the top; never infer completion from a filled heading.
+Proceed in numbered order, or resume the recorded stage. Before advancing, check the stage's required content below, record why it is Ready and announce the transition. Unresolved decision-relevant gaps block readiness; explicit assumptions are not evidence.
+Skip or defer a stage only when the user requests it; record the reason and downstream limits. Explicit requests for a later stage permit that entry, not silent completion of earlier stages. Reopen affected stages when new evidence invalidates them.
+End each case reply with the next move and any blocker or Needs revision sections. A standalone stage task still shows its stage and "Case: not used"; do not create a case unless requested.
 
 ## One living document
 
 Read the latest case before working; reuse its existing location and identity. For a new case, use one Markdown document in the user's chosen durable location or the host's default file storage. Never put case content in this plugin's source repository unless requested.
-Start with a title; updated date, current stage, recommendation and next move; then exactly the seven numbered sections below. Mark unexplored sections "Not yet explored"; use subheadings only as needed. Keep early cases short; do not elaborate later stages on guesses.
-Update sections in place at meaningful pauses. Keep sources beside claims, distinguish evidence, assumptions, estimates and decisions, and date consequential changes with their reasons inside the relevant section.
+Start with a title; updated date, current stage, recommendation, unresolved gaps and next move; then exactly the seven numbered sections below. Mark unexplored sections "Status: Not yet explored"; use subheadings only as needed. Keep early cases short; do not elaborate later stages on guesses.
+Update the document after every substantive answer or finding, before the next case reply; do not leave state only in chat. Update sections in place. Keep sources beside claims, distinguish evidence, assumptions, estimates and decisions, and date consequential changes with their reasons inside the relevant section.
 Preserve original predictions, thresholds and dated decisions; record revisions alongside them. Reassess dependent sections when evidence changes; mark unresolved dependencies "Needs revision" and explain why.
 Keep the user's draft intact unless edits are requested. Re-read before saving; preserve concurrent changes. Save through available tools and report success only after verification. If persistence is unavailable, return the updated document and say it is unsaved.
 When migrating an older case, preserve its substantive content under these headings. A standalone task needs only the requested output unless a living case is requested or already exists.
