@@ -2,7 +2,7 @@
 
 ## Scope and result
 
-A native personal-skill execution path for `strategy-factory` is verified in ChatGPT Work. The complete repository plugin is **not** verified as an installed plugin. Ordinary ChatGPT, the iPhone picker, and iPhone instruction loading remain **not verified**.
+A native personal-skill execution path for `strategy-factory` is verified in ChatGPT Work. The complete repository plugin is **not** verified as an installed plugin. The user subsequently tested the ordinary iPhone Chat picker: typing `@st` showed Study but did not show `strategy-factory`. That picker check did not pass. Instruction loading in ordinary iPhone Chat remains unverified.
 
 Source inspected: `main` at `bb17e5427e4800e3ca9534c6ed6cf7efa63ddbce`, plugin version `0.1.1`. No repository-local `AGENTS.md` was present in the recursive tree. All eight skills, manifests, installation guidance, case template, and evaluation criteria were read. This report does not change the methodology or package version.
 
@@ -28,7 +28,8 @@ The current conversation retained cached skill resources: after the core update,
 | Native skill storage | Passed | Existing core updated and seven specialists saved; stored contents verified after reconciliation. |
 | Core Work availability/loading | Passed | Initial session catalog plus actual `skills.list` and `skills.read` results. |
 | New specialist catalog loading | Not verified | Current skill reader did not expose the newly installed specialist tested. |
-| UI picker / Try in chat | Not verified | No ordinary-chat or iPhone client interaction was performed. |
+| iPhone Chat picker | Did not pass | User screenshot shows `@st` with Study as the only visible suggestion; no `strategy-factory` entry. This does not establish the cause. |
+| Try in chat after update | Not verified | No new observation of this control. |
 | Complete plugin install | Not verified | No custom repository-registration tool or plugin-creator skill exposed; `codex` absent from PATH; directory search found no matching plugin. |
 | Ordinary ChatGPT / iPhone | Not verified | Work evidence cannot pass these gates. |
 | Copilot / Claude consumer app | Not verified | No runtime tests on those hosts. |
@@ -79,7 +80,7 @@ This is encouraging but remains **limited evidence**: the parent received the ch
 
 The useful execution path today is the installed core in Work. No repeated upload or reinstall is indicated by these results.
 
-The smallest remaining user-side check is one fresh **ordinary ChatGPT conversation on iPhone**, in the same account/workspace: determine whether `strategy-factory` appears in the `@` picker. If selectable, verify that the conversation can actually load the skill instructions before judging coaching quality. A plausible answer is insufficient.
+The requested ordinary iPhone Chat picker check has now been performed and did not expose the skill. Do not ask the user to repeat it without a material installation or registration change. The next investigation concerns the complete plugin's account/workspace registration and distribution.
 
 Keep the seven specialists' fresh-session discovery and complete-plugin registration as separate checks. Do not interpret native-skill installation as plugin installation, and do not interpret a repository change as an update to an imported copy.
 
@@ -90,3 +91,17 @@ Keep the seven specialists' fresh-session discovery and complete-plugin registra
 - [Package your plugin](https://developers.openai.com/plugins/build/plugins): portable manifests and local marketplace registration.
 - [Connect and test your plugin](https://developers.openai.com/plugins/deploy/connect-chatgpt): separate installed-plugin testing.
 - [Agent Plugins manifest schema](https://agent-plugins.org/schemas/1.0.0/plugin.schema.json): static manifest constraints.
+
+## Registration investigation follow-up
+
+The live ChatGPT Plugins page opened in the dedicated cloud browser, but the browser was signed out. Account-specific management controls cannot be assessed until secure sign-in completes. This browser limitation is not evidence of an account restriction or the cause of the iPhone issue.
+
+Current official documentation separates three routes:
+
+- Local/repository marketplaces: supported local development and testing; not proof of ordinary iPhone availability.
+- Workspace publication/import: workspace-managed distribution; publication requires workspace administration rights.
+- Public directory: skills-only submissions are supported, but require publisher verification, listing materials, review, and publication. This route has not been initiated.
+
+For personal use, public-directory publication is additional work, not a demonstrated prerequisite. Check the account's actual management options before choosing a distribution route. No package rewrite, MCP service, subscription upgrade, or repeat ZIP upload is justified by the current evidence.
+
+Sources: [packaging and workspace publication](https://developers.openai.com/plugins/build/plugins), [public submission](https://developers.openai.com/plugins/deploy/submission).
