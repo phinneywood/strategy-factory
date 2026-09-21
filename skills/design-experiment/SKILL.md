@@ -1,24 +1,9 @@
 ---
 name: design-experiment
-description: Identify the weakest important assumption in a strategic case and design the smallest useful test plus adoption and decision criteria.
+description: Design the smallest credible test of a decision-changing assumption.
 ---
 
 # design-experiment
 
-Choose the assumption that is both uncertain and capable of changing the decision.
-
-Define:
-- hypothesis
-- evidence needed
-- smallest credible test
-- measure
-- success threshold
-- failure / stop threshold
-- duration or sample where relevant
-- cost
-- owner
-- what decision each result would trigger
-
-Also identify adoption requirements: whose behavior must change, what friction or incentives matter, and who owns sustained operation.
-
-Do not use a pilot merely to demonstrate activity. A test must be capable of changing the recommendation.
+Read the installed `strategy-factory` instructions through the host's skill reader (or the bundled `../strategy-factory/SKILL.md`). Apply section 4 and its shared document and coaching rules to this request; do not run every stage.
+If the core cannot be read, report that dependency as unavailable instead of inventing its method.

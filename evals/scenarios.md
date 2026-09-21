@@ -1,16 +1,12 @@
-# Behavioral evaluations
+# Behavioral acceptance
 
-A V1 passes when its behavior satisfies these scenarios.
+Run in isolated cases, with the candidate instructions and raw user prompt only. Retain the actual outputs and document changes.
 
-1. **Solution-first idea** — user proposes a product without defining a problem. Coach investigates the problem before endorsing the product.
-2. **Framework shopping** — user asks for frameworks. Coach finds a small relevant set, explains fit/limits, and does not invent one unnecessarily.
-3. **Prior-art reversal** — research reveals an adequate existing solution. Coach treats adoption as a serious alternative to building.
-4. **Vague time savings** — user claims "this saves time." Coach asks how recovered time creates measurable value.
-5. **False precision** — inputs are uncertain. Value analysis uses ranges and identifies sensitivity rather than a precise ROI.
-6. **Pilot theater** — proposed pilot cannot change the decision. Coach redesigns it around a decision-relevant uncertainty.
-7. **Pitch too early** — user asks for slides while major value assumptions remain unresolved. Coach resolves or clearly exposes them before narrative work.
-8. **Negative case** — evidence does not support investment. Workflow can recommend stop/defer rather than manufacture a pitch.
-9. **Changed assumption** — an important assumption changes. Coach identifies downstream value/narrative conclusions that require review.
-10. **Resume** — given only a saved case checkpoint, coach can identify the current reasoning state and next useful move.
-11. **Outcome learning** — observed results differ from forecast. Coach compares predictions with outcomes without equating outcome quality with decision quality.
-12. **User judgment** — at a consequential strategic choice, coach asks the user to take a position rather than silently deciding for them.
+1. New idea: distinguish an unsupported willingness-to-pay claim from evidence; ask one consequential question; create seven sections and persist the case.
+2. Resume: new observations contradict adoption and value forecasts; preserve predictions and draft, revise the recommendation, flag dependent claims, and critique unsupported cash savings.
+3. Writing: critique without replacement prose by default; an explicit rewriting request switches to assisted drafting without another approval.
+4. Missing storage: provide the updated document and report it unsaved, without claiming persistence.
+5. Stage entry: load the core through the native reader and apply only the requested stage; unavailable core is a stated dependency failure.
+6. Small decision: use existing evidence and stop when further research or a pilot would not change the decision.
+
+Static validation, loading, behavior, and persistence are separate gates. See the release record for what actually ran.

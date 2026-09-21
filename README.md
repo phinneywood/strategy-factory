@@ -1,59 +1,33 @@
 # strategy-factory
 
-A portable agent-skills toolkit for developing an idea into a decision-ready strategic case.
+A small, source-based strategic coach for ChatGPT Work. One living Markdown document per case; no executable code, database, server, or model-specific prompt machinery.
 
-The first workflow is **idea-development**. It is designed to improve the user's strategic judgment rather than merely generate polished proposals. The canonical methodology lives in portable Agent Skills with ChatGPT, GitHub Copilot, and the Claude consumer app as compatibility targets. Runtime support must be verified separately on each host.
+## Use
 
-## idea-development workflow
+Ask `@strategy-factory` to develop an idea or resume its existing document. It reads the latest case, works on the next useful decision, and updates that same document.
+The host supplies research and durable file access. A conversation alone is not saved state. Keep personal cases in your chosen storage, not this plugin repository unless explicitly intended.
 
-1. **sharpen-idea** — define the problem, outcome, audience, constraints, and assumptions.
-2. **find-frameworks** — find established frameworks that fit the problem before inventing a new one.
-3. **investigate-prior-art** — research analogous implementations and credible alternatives, including doing nothing.
-4. **model-value** — turn benefits into explicit, measurable value hypotheses with costs and uncertainty.
-5. **design-experiment** — identify the weakest important assumption and design the smallest useful experiment.
-6. **form-narrative** — build a decision-oriented argument for a specific audience and ask.
-7. **review-outcome** — compare predictions with outcomes and record what changed in the user's judgment.
+## One document, seven stages
 
-The workflow is deliberately non-linear. New evidence can send a case back to an earlier stage.
+1. Problem and decision — Matt Pocock's grilling, adapted for one question at a time.
+2. Evidence and alternatives — primary-source research and proportionate Green Book options appraisal.
+3. Value and adoption — Green Book Five Case Model; optional Amazon Working Backwards PR/FAQ.
+4. Validation — Strategyzer Test Card.
+5. Narrative structure — Moghe's *Nail your narrative* or Amazon decision memo practice.
+6. Working draft and critique — Ptacek's *How To Write With An LLM*.
+7. Outcome and learning — Magenta Book evaluation.
 
-## Principles
+The [core skill](skills/strategy-factory/SKILL.md) contains the complete method and source links. These are our adaptations, not author-endorsed skills or demonstrated plugin effectiveness.
+Stages are a map, not mandatory gates. Forecasts and decisions retain their history; changed evidence triggers review of dependent sections. Writing defaults to critique; explicit drafting requests switch to assisted drafting.
 
-- Coach judgment; do not replace it.
-- Separate facts, assumptions, estimates, and decisions.
-- Research factual claims and preserve sources.
-- Existing approaches beat invented frameworks when outcomes are comparable.
-- "Do not pursue" is a valid outcome.
-- Do not create a pitch before the value case survives challenge.
-- Keep the smallest useful case record; avoid building a case-management system prematurely.
-- Keep essential behavior portable; host-specific packaging must not become product logic.
+## Package
 
-## Naming
+The core is self-contained. Existing named specialists and `write-with-an-llm` are short entry points into it; they require the core to be readable. Do not install those entry points alone.
+[Case template](cases/templates/case.md) · [Acceptance scenarios](evals/scenarios.md) · [0.2.0 release record](evals/release-0.2.0.md).
 
-Use lowercase, hyphen-separated names everywhere a project, workflow, or skill is named: `strategy-factory`, not `Strategy Factory`. Each skill's directory, frontmatter `name`, top-level Markdown heading, and archive base name must agree. Use the same spelling for any host-specific display-name metadata added later. Standard filenames such as `SKILL.md`, `README.md`, and `LICENSE` retain their required or conventional spelling.
-
-## Repository structure
-
-- `plugin.json` — Agent Plugins 1.0 package metadata for compatible hosts.
-- `skills/strategy-factory/SKILL.md` — overall method and coaching contract.
-- `skills/*/SKILL.md` — independently discoverable specialist skills.
-- `cases/templates/case.md` — resumable case checkpoint.
-- `evals/scenarios.md` — behavioral acceptance scenarios.
-- `evals/compatibility.md` — cross-platform compatibility matrix, installation preflight, and acceptance rule.
-
-## Platform strategy
-
-The `skills/` directory is the canonical product. ChatGPT, GitHub Copilot, and Claude should consume the same methodology. Host-specific adapters may be added only when testing demonstrates a real capability gap.
-
-Compatibility means materially equivalent strategic behavior against the same eval scenarios, not identical packaging, wording, or tool calls. A successful upload is not proof of availability or invocation. Complete the installation preflight in `evals/compatibility.md` before evaluating automatic selection or coaching quality.
-
-## Verified execution status
-
-The native core loads in ChatGPT Work and has completed bounded coaching smoke tests. All eight canonical skills have been saved as personal skills. This is not a verified complete-plugin installation or proof of ordinary ChatGPT/iPhone availability. See the [Work validation record](evals/work-validation-2026-09-21.md) and [installation boundaries](docs/chatgpt-installation.md).
-
-## V1
-
-V1 is intentionally skills-first. There is no database, custom web UI, autonomous orchestration service, workflow builder, or speculative host adapter. The host provides the conversational interface and available research tools; this repository defines the method.
+Native Work installation and portable source packaging are separate. Complete-plugin registration and ordinary Chat/iOS execution are not implied by Work tests. Previous verification records describe 0.1.1, not this release.
+There is no automatic upstream update service. Review source changes when they are relevant; keep model behavior flexible rather than prescribing a script.
 
 ## License
 
-Apache-2.0. See `LICENSE`.
+Apache-2.0 for this package; linked works retain their own rights. Method instructions are concise original adaptations. Naming uses lowercase hyphenated skill names.

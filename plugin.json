@@ -1,8 +1,8 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "strategy-factory",
-  "version": "0.1.1",
-  "description": "Develop ideas into decision-ready strategic cases while strengthening the user's strategic judgment.",
+  "version": "0.2.0",
+  "description": "Develop strategic judgment through source-based methods and one living case document.",
   "author": {
     "name": "phinneywood"
   },
@@ -13,11 +13,11 @@
       "interface": {
         "displayName": "strategy-factory",
         "shortDescription": "Develop ideas and practice strategic judgment.",
-        "longDescription": "A skills-only toolkit for sharpening ideas, researching frameworks and prior art, modeling value, designing experiments, forming narratives, and reviewing outcomes. Coaching keeps evidence, assumptions, and user decisions distinct.",
+        "longDescription": "Seven stages in one living document, from questioning and evidence through value, validation, narrative, author-led writing and outcome review. Adapted from named practitioner sources.",
         "developerName": "phinneywood",
         "category": "Productivity",
         "defaultPrompt": [
-          "Use strategy-factory to help me develop an idea, one substantive question at a time."
+          "Use strategy-factory to develop or resume my idea in one living case document."
         ]
       }
     }

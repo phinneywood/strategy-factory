@@ -1,19 +1,9 @@
 ---
 name: investigate-prior-art
-description: Research concrete implementations, analogous initiatives, and alternatives to an idea before committing to build or invest.
+description: Research implemented examples and credible alternatives to a strategic proposal.
 ---
 
 # investigate-prior-art
 
-Search for implemented examples and credible analogues, not just conceptual articles.
-
-Compare:
-- build the proposed idea
-- adapt an existing implementation
-- buy/use an existing product
-- change process or incentives instead
-- do nothing / defer
-
-For evidence, record source, context, observed result if known, and transferability limits.
-
-Do not infer causality from a case study that only reports an outcome. End with the options that remain credible and what evidence would discriminate among them.
+Read the installed `strategy-factory` instructions through the host's skill reader (or the bundled `../strategy-factory/SKILL.md`). Apply section 2 and its shared document and coaching rules to this request; do not run every stage.
+If the core cannot be read, report that dependency as unavailable instead of inventing its method.
