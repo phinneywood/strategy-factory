@@ -36,7 +36,7 @@ Do not upload the complete repository into the standalone-skill uploader or infe
 
 Current documentation describes plugin-provided skills across supported Chat and Work surfaces, including mobile. Its standalone-skill availability description is narrower. These general descriptions do not establish that this account's personal upload is available in ordinary iPhone chats.
 
-For the outstanding mobile check, use one new ordinary ChatGPT conversation in the same account/workspace. Check whether `strategy-factory` appears in the `@` picker and, if selected, whether its instructions actually load. Do not use coaching fluency as the loading test.
+The user completed the ordinary iPhone Chat picker check after the native update: `@st` showed Study and did not show `strategy-factory`. This check did not pass; the cause remains unknown. Do not request a repeat without a material change. Investigate account/workspace plugin-registration options next. The cloud browser reached ChatGPT Plugins but was signed out, so account-specific controls require secure sign-in before inspection.
 
 Workspace import and public-directory publication are separate distribution routes. Neither was performed. No plan upgrade, repeated reinstall, or additional infrastructure is justified by this evidence.
 
