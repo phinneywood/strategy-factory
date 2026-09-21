@@ -1,0 +1,7 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "strategy-factory",
+  "version": "0.1.0",
+  "description": "Develop ideas into decision-ready strategic cases while strengthening the user's strategic judgment.",
+  "license": "Apache-2.0"
+}
