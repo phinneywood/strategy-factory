@@ -1,3 +1,7 @@
+# Current release
+
+The following is historical 0.1.1 evidence. See [0.2.0 verification](release-0.2.0.md). The new core is self-contained; stage entry points require it to be readable. ChatGPT Work is the present target; other hosts require separate tests.
+
 # Cross-platform compatibility
 
 The portable contract for `strategy-factory` is the Agent Skills content under `skills/`. Essential methodology must not depend on host-specific configuration.

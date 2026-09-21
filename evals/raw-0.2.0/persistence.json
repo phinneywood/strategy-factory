@@ -1,0 +1,38 @@
+{
+  "strategy-factory": {
+    "stored_matches_source": true,
+    "sha256": "c74a8192a5f45e8c395334f01597563ad7d0365dd9366a4af98a836922642cef"
+  },
+  "sharpen-idea": {
+    "stored_matches_source": true,
+    "sha256": "9dbf5dff9dbf5a9060f8053a9705b661fc4d9bd90e5fee75a137a33bd6e458e1"
+  },
+  "find-frameworks": {
+    "stored_matches_source": true,
+    "sha256": "74e7266ac3c7cd84944b564c4465e45c009347742c90586bc6f05fdf6d4019f1"
+  },
+  "investigate-prior-art": {
+    "stored_matches_source": true,
+    "sha256": "d7c3287fad4d4309c02ab115f6ac37ec333d9852004b0d6b2d821d47a3ce6342"
+  },
+  "model-value": {
+    "stored_matches_source": true,
+    "sha256": "17b608d528d11ae3df5fc8cdaa25c91b65c7e2dcc1cffa46db289859353bb974"
+  },
+  "design-experiment": {
+    "stored_matches_source": true,
+    "sha256": "1b57965e6d71bfc675abcd0336ce7a96d3b7296ea9d6a39614ffcbd08b1ff81b"
+  },
+  "form-narrative": {
+    "stored_matches_source": true,
+    "sha256": "8d13cd2a203cb69b58080967bc9ba2621d1822f277941dc68375c3791f211b21"
+  },
+  "write-with-an-llm": {
+    "stored_matches_source": true,
+    "sha256": "992284ca5463ea63c10f327b7da57c7608252abba7cd0826bc4aac417fdd2687"
+  },
+  "review-outcome": {
+    "stored_matches_source": true,
+    "sha256": "fb0c9ae12bac3f738da683bd73d83f05d67ad6c18412ff71786fda36e34bb78c"
+  }
+}

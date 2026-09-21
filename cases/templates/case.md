@@ -1,53 +1,24 @@
-# Strategy case: <title>
+# <case title>
 
-**Status:** developing
-**Current stage:** <stage>
-**Last updated:** <date>
+Updated: <date> | Stage: <stage> | Recommendation: Undecided | Next move: <next move>
 
-## Decision
-What decision is this work intended to support, and who makes it?
+## 1. Problem and decision
+Not yet explored.
 
-## Problem
-What problem or opportunity exists? Who experiences it? What evidence supports it?
+## 2. Evidence and alternatives
+Not yet explored.
 
-## Thesis
-Current proposed mechanism and why it should improve the outcome.
+## 3. Value and adoption
+Not yet explored.
 
-## Alternatives
-| Alternative | Why credible | Evidence | Current view |
-|---|---|---|---|
+## 4. Validation
+Not yet explored.
 
-## Evidence
-| Claim | Evidence/source | Context | Confidence |
-|---|---|---|---|
+## 5. Narrative structure
+Not yet explored.
 
-## Assumptions
-| Assumption | Importance | Uncertainty | How to test |
-|---|---|---|---|
+## 6. Working draft and critique
+Not yet explored.
 
-## Value hypothesis
-Causal chain:
-<intervention> -> <change> -> <outcome> -> <value>
-
-Key ranges and costs:
-
-## Measurement
-Leading indicators:
-Lagging outcomes:
-Baseline:
-Owner:
-
-## Adoption
-Whose behavior must change?
-What must become operationally true?
-Who owns the ongoing model?
-
-## Decision log
-| Date | Decision/judgment | Why | Downstream sections affected |
-|---|---|---|---|
-
-## Open questions
--
-
-## Next move
-One highest-value next action or question.
+## 7. Outcome and learning
+Not yet explored.

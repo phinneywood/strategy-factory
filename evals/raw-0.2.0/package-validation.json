@@ -1,0 +1,61 @@
+{
+  "ok": true,
+  "scope": "Static convention checks only; no full schema, security, installation, or runtime verification.",
+  "errors": [],
+  "skills": [
+    {
+      "name": "design-experiment",
+      "files_sha256": {
+        "SKILL.md": "1b57965e6d71bfc675abcd0336ce7a96d3b7296ea9d6a39614ffcbd08b1ff81b"
+      }
+    },
+    {
+      "name": "find-frameworks",
+      "files_sha256": {
+        "SKILL.md": "74e7266ac3c7cd84944b564c4465e45c009347742c90586bc6f05fdf6d4019f1"
+      }
+    },
+    {
+      "name": "form-narrative",
+      "files_sha256": {
+        "SKILL.md": "8d13cd2a203cb69b58080967bc9ba2621d1822f277941dc68375c3791f211b21"
+      }
+    },
+    {
+      "name": "investigate-prior-art",
+      "files_sha256": {
+        "SKILL.md": "d7c3287fad4d4309c02ab115f6ac37ec333d9852004b0d6b2d821d47a3ce6342"
+      }
+    },
+    {
+      "name": "model-value",
+      "files_sha256": {
+        "SKILL.md": "17b608d528d11ae3df5fc8cdaa25c91b65c7e2dcc1cffa46db289859353bb974"
+      }
+    },
+    {
+      "name": "review-outcome",
+      "files_sha256": {
+        "SKILL.md": "fb0c9ae12bac3f738da683bd73d83f05d67ad6c18412ff71786fda36e34bb78c"
+      }
+    },
+    {
+      "name": "sharpen-idea",
+      "files_sha256": {
+        "SKILL.md": "9dbf5dff9dbf5a9060f8053a9705b661fc4d9bd90e5fee75a137a33bd6e458e1"
+      }
+    },
+    {
+      "name": "strategy-factory",
+      "files_sha256": {
+        "SKILL.md": "c74a8192a5f45e8c395334f01597563ad7d0365dd9366a4af98a836922642cef"
+      }
+    },
+    {
+      "name": "write-with-an-llm",
+      "files_sha256": {
+        "SKILL.md": "992284ca5463ea63c10f327b7da57c7608252abba7cd0826bc4aac417fdd2687"
+      }
+    }
+  ]
+}

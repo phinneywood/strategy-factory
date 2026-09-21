@@ -1,3 +1,7 @@
+# Current release
+
+For 0.2.0, see [the release record](../evals/release-0.2.0.md). Install the core with any stage entry points; they share its method. The historical account below describes 0.1.1.
+
 # ChatGPT installation
 
 ## Verified status — 2026-09-21

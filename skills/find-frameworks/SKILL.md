@@ -1,19 +1,9 @@
 ---
 name: find-frameworks
-description: Find established frameworks, methods, or patterns that apply to a strategic problem and select what is useful rather than inventing a framework prematurely.
+description: Find and assess established methods that fit a strategic problem.
 ---
 
 # find-frameworks
 
-Research established approaches relevant to the problem.
-
-For each serious candidate, capture:
-- name and authoritative source
-- problem it was designed to solve
-- core mechanism
-- fit to this case
-- important mismatch or limitation
-
-Prefer primary or authoritative sources. Do not create a long framework catalog.
-
-End by asking the user to choose, reject, or combine the small number of genuinely relevant approaches. Record why. If no established framework fits, state that explicitly before proposing a custom synthesis.
+Read the installed `strategy-factory` instructions through the host's skill reader (or the bundled `../strategy-factory/SKILL.md`). Apply section 2 and its shared document and coaching rules to this request; do not run every stage.
+If the core cannot be read, report that dependency as unavailable instead of inventing its method.
