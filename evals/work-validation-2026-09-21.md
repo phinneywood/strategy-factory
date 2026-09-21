@@ -27,11 +27,12 @@ The current conversation retained cached skill resources: after the core update,
 | Marketplace | Static checks passed | Plugin identity, `./` source path, root manifest, policy fields, and eight skills were consistent. |
 | Native skill storage | Passed | Existing core updated and seven specialists saved; stored contents verified after reconciliation. |
 | Core Work availability/loading | Passed | Initial session catalog plus actual `skills.list` and `skills.read` results. |
-| New specialist catalog loading | Not verified | Current skill reader did not expose the newly installed specialist tested. |
+| New specialist catalog loading | Reported success; tool results not independently visible | A fresh Work UI session reported catalog discovery and successful reads for all eight. Its expanded activity panel exposed no underlying reader results; this does not upgrade the direct-evidence gate. |
 | iPhone Chat picker | Did not pass | User screenshot shows `@st` with Study as the only visible suggestion; no `strategy-factory` entry. This does not establish the cause. |
-| Try in chat after update | Not verified | No new observation of this control. |
+| Try in chat after update | Web launch passed | Opens a Work draft with the selected skill. This is launch evidence, not instruction-loading evidence; iPhone launch remains unverified. |
 | Complete plugin install | Not verified | No custom repository-registration tool or plugin-creator skill exposed; `codex` absent from PATH; directory search found no matching plugin. |
-| Ordinary ChatGPT / iPhone | Not verified | Work evidence cannot pass these gates. |
+| Ordinary web Chat | Loading check did not pass | A selected skill chip survived switching from Work to Chat, but the execution searched the plugin directory and fetched GitHub instead of showing an installed-skill read. The picker also did not expose the skill. |
+| Ordinary iPhone instruction loading | Not verified | Work and web launch evidence cannot pass this gate. |
 | Copilot / Claude consumer app | Not verified | No runtime tests on those hosts. |
 
 Core canonical SHA-256: `1c3bb295fe907fc722606b733db99f2eff3a4eea3fc1826f801619c9ff550937`.
@@ -74,7 +75,7 @@ The response retained deferral, identified the gap between the owner's one-hour 
 
 A fresh test received only a short homeowner-service idea prompt, without the skill name or path. It reported selecting `strategy-factory` and reading it with `skills.read`, and produced a relevant one-question opening.
 
-This is encouraging but remains **limited evidence**: the parent received the child's execution report, not an independently exported full child tool trace. Do not treat the answer or self-report alone as a passed automatic-discovery gate. No UI-selected invocation was tested.
+This is encouraging but remains **limited evidence**: the parent received the child's execution report, not an independently exported full child tool trace. Do not treat the answer or self-report alone as a passed automatic-discovery gate. No UI-selected invocation was tested in that initial probe. The later browser checks below are separate.
 
 ## Next verification
 
@@ -94,7 +95,7 @@ Keep the seven specialists' fresh-session discovery and complete-plugin registra
 
 ## Registration investigation follow-up
 
-The live ChatGPT Plugins page opened in the dedicated cloud browser, but the browser was signed out. Account-specific management controls cannot be assessed until secure sign-in completes. This browser limitation is not evidence of an account restriction or the cause of the iPhone issue.
+The live ChatGPT Plugins page initially opened signed out. Secure sign-in subsequently completed, allowing the account-specific checks below. Authentication was a temporary browser prerequisite, not evidence of the cause of the iPhone issue.
 
 Current official documentation separates three routes:
 
@@ -105,3 +106,19 @@ Current official documentation separates three routes:
 For personal use, public-directory publication is additional work, not a demonstrated prerequisite. Check the account's actual management options before choosing a distribution route. No package rewrite, MCP service, subscription upgrade, or repeat ZIP upload is justified by the current evidence.
 
 Sources: [packaging and workspace publication](https://developers.openai.com/plugins/build/plugins), [public submission](https://developers.openai.com/plugins/deploy/submission).
+
+
+## Authenticated browser checks
+
+The user's existing account and existing Strategy factory project were observed after secure sign-in. No new project was created.
+
+1. **Installed UI:** Skills → Installed listed the core and all seven specialists. The core detail view showed the corrected title and canonical instructions. Its menu offered Edit, Download, Uninstall, and Delete. No uninstall or deletion was performed.
+2. **Web launch:** The core's Try in chat button navigated to a new Work draft with a selected `strategy-factory` chip. Switching the draft to Chat retained the chip. Thus a visible selection is insufficient evidence of runtime loading.
+3. **Ordinary Chat execution:** The selected draft was submitted. The visible tool activity included a plugin-directory search with query `strategy factory`, followed by GitHub retrieval. The response explicitly reported missing installed instructions and proceeded with a repository-based demonstration. That fallback was stopped; it does not pass native skill loading. The model's diagnosis is not independently proven by its statement or by the plugin search alone.
+4. **Ordinary web picker:** A fresh Chat draft with `@st` showed suggestions including Study and a Strategy factory **folder**, but no `strategy-factory` skill. Entering the complete `@strategy-factory` name produced no skill suggestion. This corroborates the failed availability check on another surface without establishing a cause.
+5. **Account registration controls:** The Plugins directory and installed-plugin settings exposed no custom repository import, Personal publication, or workspace administration control in the views inspected. The visible Developer mode description concerned unverified connectors and linked MCP documentation. It was not enabled: that observation does not provide a supported skills-only plugin registration route.
+6. **Fresh Work specialist check:** Launched `model-value` through Try in chat, kept Work selected, and associated the test with the existing Strategy factory project. The submitted bounded test requested native catalog/read checks for all eight and forbade GitHub, substitute sources, file changes, and coaching. The response reported successful native reads for every installed resource. The expanded Work activity panel showed commentary, not the underlying tool payloads. Record this as fresh-session reported success with an evidence limitation, not independent proof for all eight.
+
+No additional package changes, ZIP upload, account upgrade, security-setting change, workspace publication, or public-directory submission resulted from these checks. The full plugin remains uninstalled/unverified. The directly evidenced core execution path remains Work; ordinary Chat and iPhone instruction loading remain unresolved.
+
+A screenshot of all eight installed entries was saved with the user's project evidence. Private conversation URLs and unrelated account details are intentionally excluded from this public repository report.
