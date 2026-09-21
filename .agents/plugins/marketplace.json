@@ -1,0 +1,20 @@
+{
+  "name": "strategy-factory-local",
+  "interface": {
+    "displayName": "strategy-factory-local"
+  },
+  "plugins": [
+    {
+      "name": "strategy-factory",
+      "source": {
+        "source": "local",
+        "path": "./"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

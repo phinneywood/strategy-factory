@@ -1,7 +1,25 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "strategy-factory",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Develop ideas into decision-ready strategic cases while strengthening the user's strategic judgment.",
-  "license": "Apache-2.0"
+  "author": {
+    "name": "phinneywood"
+  },
+  "repository": "https://github.com/phinneywood/strategy-factory",
+  "license": "Apache-2.0",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "strategy-factory",
+        "shortDescription": "Develop ideas and practice strategic judgment.",
+        "longDescription": "A skills-only toolkit for sharpening ideas, researching frameworks and prior art, modeling value, designing experiments, forming narratives, and reviewing outcomes. Coaching keeps evidence, assumptions, and user decisions distinct.",
+        "developerName": "phinneywood",
+        "category": "Productivity",
+        "defaultPrompt": [
+          "Use strategy-factory to help me develop an idea, one substantive question at a time."
+        ]
+      }
+    }
+  }
 }
