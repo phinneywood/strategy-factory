@@ -4,7 +4,7 @@
 
 The existing core `strategy-factory` personal skill was discoverable and its full instructions loaded in ChatGPT Work. Its title/display metadata were aligned with the repository. The seven specialists were then installed through Work's native personal-skill workflow. All eight saved instruction files match repository version 0.1.1.
 
-**This verifies a native skill path in Work, not the complete plugin or ordinary ChatGPT/iPhone availability.** The authenticated Skills page now shows all eight installed entries. A fresh Work UI session reported successful native reads for all eight, but its visible activity panel did not expose the underlying tool payloads. Directly observed core loading and reported specialist loading remain separate evidence levels.
+**This verifies a native skill path in Work, not the complete plugin or ordinary ChatGPT/iPhone availability.** The authenticated Skills page now shows all eight installed entries. A subsequent turn exposed all eight in the native catalog, and eight direct `skills.read` calls returned their complete installed instructions. Work loading is now directly verified for both the core and all seven specialists. Automatic selection and ordinary Chat/iPhone availability remain separate, unverified gates.
 
 See [the execution record](../evals/work-validation-2026-09-21.md) for evidence, coaching smoke tests, and limitations. No coaching instructions or package version changed.
 
