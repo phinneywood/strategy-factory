@@ -18,14 +18,14 @@ The host supplies research and durable file access. A conversation alone is not 
 7. Outcome and learning — Magenta Book evaluation.
 
 The [core skill](skills/strategy-factory/SKILL.md) contains the complete method and source links. These are our adaptations, not author-endorsed skills or demonstrated plugin effectiveness.
-Stages are a map, not mandatory gates. Forecasts and decisions retain their history; changed evidence triggers review of dependent sections. Writing defaults to critique; explicit drafting requests switch to assisted drafting.
+Follow stages in order or resume the recorded stage. Every case reply identifies its stage, linked document and verified save state. Readiness checks and announced transitions are mandatory; defer or enter a later stage only when requested. Each section carries a status, and substantive answers are saved before the next reply. Forecasts and decisions retain their history; changed evidence triggers review of dependent sections. Writing defaults to critique; explicit drafting requests switch to assisted drafting.
 
 ## Package
 
 The core is self-contained. Existing named specialists and `write-with-an-llm` are short entry points into it; they require the core to be readable. Do not install those entry points alone.
-[Case template](cases/templates/case.md) · [Acceptance scenarios](evals/scenarios.md) · [0.2.0 release record](evals/release-0.2.0.md).
+[Case template](cases/templates/case.md) · [Acceptance scenarios](evals/scenarios.md) · [0.2.1 release record](evals/release-0.2.1.md).
 
-Native Work installation and portable source packaging are separate. Complete-plugin registration and ordinary Chat/iOS execution are not implied by Work tests. Previous verification records describe 0.1.1, not this release.
+Native Work installation and portable source packaging are separate. Complete-plugin registration and ordinary Chat/iOS execution are not implied by Work tests. Earlier verification records apply only to the releases they name.
 There is no automatic upstream update service. Review source changes when they are relevant; keep model behavior flexible rather than prescribing a script.
 
 ## License
