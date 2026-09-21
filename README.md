@@ -1,8 +1,8 @@
 # Strategy Factory
 
-A ChatGPT-native workspace for developing an idea into a decision-ready strategic case.
+A portable agent-skills toolkit for developing an idea into a decision-ready strategic case.
 
-The first workflow is **Idea Development**. It is designed to improve the user's strategic judgment rather than merely generate polished proposals.
+The first workflow is **Idea Development**. It is designed to improve the user's strategic judgment rather than merely generate polished proposals. The canonical methodology lives in portable Agent Skills so the same core can run across ChatGPT, GitHub Copilot, and the Claude app.
 
 ## Idea Development workflow
 
@@ -25,14 +25,27 @@ The workflow is deliberately non-linear. New evidence can send a case back to an
 - "Do not pursue" is a valid outcome.
 - Do not create a pitch before the value case survives challenge.
 - Keep the smallest useful case record; avoid building a case-management system prematurely.
+- Keep essential behavior portable; host-specific packaging must not become product logic.
 
 ## Repository structure
 
-- `plugin/coach/SKILL.md` — entry point and routing behavior.
-- `plugin/skills/*/SKILL.md` — specialized workflow stages.
+- `plugin.json` — Agent Plugins 1.0 package metadata for compatible hosts.
+- `skills/strategy-factory/SKILL.md` — overall method and coaching contract.
+- `skills/*/SKILL.md` — independently discoverable specialist skills.
 - `cases/templates/case.md` — resumable case checkpoint.
 - `evals/scenarios.md` — behavioral acceptance scenarios.
+- `evals/compatibility.md` — cross-platform compatibility matrix and acceptance rule.
+
+## Platform strategy
+
+The `skills/` directory is the canonical product. ChatGPT, GitHub Copilot, and Claude should consume the same methodology. Host-specific adapters may be added only when testing demonstrates a real capability gap.
+
+Compatibility means materially equivalent strategic behavior against the same eval scenarios, not identical packaging, wording, or tool calls.
 
 ## V1
 
-V1 is intentionally skills-first. There is no database, custom web UI, autonomous orchestration service, or workflow builder. ChatGPT is the interface and provides research/tool use. The repository defines the method and its reusable skills.
+V1 is intentionally skills-first. There is no database, custom web UI, autonomous orchestration service, workflow builder, or speculative host adapter. The host provides the conversational interface and available research tools; this repository defines the method.
+
+## License
+
+Apache-2.0. See `LICENSE`.
