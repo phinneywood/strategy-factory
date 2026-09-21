@@ -3,7 +3,7 @@ name: find-frameworks
 description: Find established frameworks, methods, or patterns that apply to a strategic problem and select what is useful rather than inventing a framework prematurely.
 ---
 
-# Find frameworks
+# find-frameworks
 
 Research established approaches relevant to the problem.
 

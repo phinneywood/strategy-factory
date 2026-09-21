@@ -3,7 +3,7 @@ name: review-outcome
 description: Compare a strategic idea's original predictions and assumptions with observed outcomes to improve future judgment.
 ---
 
-# Review outcome
+# review-outcome
 
 Retrieve the original case checkpoint before interpreting results.
 

@@ -3,7 +3,7 @@ name: form-narrative
 description: Turn a sufficiently developed strategic case into a decision-oriented narrative for a defined audience without hiding uncertainty.
 ---
 
-# Form narrative
+# form-narrative
 
 Do not begin with slides.
 

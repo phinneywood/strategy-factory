@@ -3,7 +3,7 @@ name: sharpen-idea
 description: Turn a raw or solution-first idea into a clear problem, outcome, audience, constraints, and testable thesis.
 ---
 
-# Sharpen idea
+# sharpen-idea
 
 Use a Grill-Me-style interview, one consequential question at a time.
 

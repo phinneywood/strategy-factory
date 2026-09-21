@@ -3,7 +3,7 @@ name: design-experiment
 description: Identify the weakest important assumption in a strategic case and design the smallest useful test plus adoption and decision criteria.
 ---
 
-# Design experiment
+# design-experiment
 
 Choose the assumption that is both uncertain and capable of changing the decision.
 

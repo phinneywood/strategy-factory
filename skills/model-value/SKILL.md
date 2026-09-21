@@ -3,7 +3,7 @@ name: model-value
 description: Convert a proposed idea's benefits into measurable business or organizational value hypotheses, costs, ranges, and a plan to measure realized value.
 ---
 
-# Model value
+# model-value
 
 Start with the causal chain:
 

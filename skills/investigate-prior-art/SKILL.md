@@ -3,7 +3,7 @@ name: investigate-prior-art
 description: Research concrete implementations, analogous initiatives, and alternatives to an idea before committing to build or invest.
 ---
 
-# Investigate prior art
+# investigate-prior-art
 
 Search for implemented examples and credible analogues, not just conceptual articles.
 

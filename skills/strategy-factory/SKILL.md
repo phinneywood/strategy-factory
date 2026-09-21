@@ -3,7 +3,7 @@ name: strategy-factory
 description: Develop an idea into a decision-ready strategic case while coaching the user's strategic judgment. Use for idea development, business cases, framework discovery, prior art, value hypotheses, experiments, strategic narratives, and outcome reviews.
 ---
 
-# Strategy Factory
+# strategy-factory
 
 Guide idea development as a non-linear strategic reasoning process. Do not mechanically run every stage and do not depend on another skill being explicitly invoked.
 
