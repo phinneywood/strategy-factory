@@ -25,6 +25,12 @@ Sources, checked 2026-09-21:
 
 These checks describe how to test installation, not a claim that any particular account has passed.
 
+## Work verification — 2026-09-21
+
+The existing native core loaded through the Work skill reader. All eight canonical skills are now saved as personal skills; fresh-session discovery of the seven newly installed specialists remains unverified. Coaching smoke tests were run after core loading. The complete plugin and ordinary ChatGPT/iPhone paths remain unverified. See [the detailed evidence](work-validation-2026-09-21.md).
+
+The matrix below refers to full intended-host compatibility, not the narrower Work result.
+
 ## Target hosts
 
 | Capability | ChatGPT | GitHub Copilot | Claude app |
@@ -44,7 +50,7 @@ A host is compatible when the behavioral scenarios in `scenarios.md` produce mat
 ## Design constraints
 
 - Keep essential behavior in portable skills.
-- Do not require one skill to explicitly invoke another.
+- Keep the core method usable without specialist loading. Supported bundled-entry coordination is allowed; do not fork the methodology by host.
 - Add host-specific adapters only for a demonstrated capability gap.
 - Do not fork the methodology by host.
 - Treat marketplace/install metadata as packaging, not product logic.

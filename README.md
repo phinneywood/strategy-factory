@@ -2,7 +2,7 @@
 
 A portable agent-skills toolkit for developing an idea into a decision-ready strategic case.
 
-The first workflow is **idea-development**. It is designed to improve the user's strategic judgment rather than merely generate polished proposals. The canonical methodology lives in portable Agent Skills so the same core can run across ChatGPT, GitHub Copilot, and the Claude app.
+The first workflow is **idea-development**. It is designed to improve the user's strategic judgment rather than merely generate polished proposals. The canonical methodology lives in portable Agent Skills with ChatGPT, GitHub Copilot, and the Claude consumer app as compatibility targets. Runtime support must be verified separately on each host.
 
 ## idea-development workflow
 
@@ -45,6 +45,10 @@ Use lowercase, hyphen-separated names everywhere a project, workflow, or skill i
 The `skills/` directory is the canonical product. ChatGPT, GitHub Copilot, and Claude should consume the same methodology. Host-specific adapters may be added only when testing demonstrates a real capability gap.
 
 Compatibility means materially equivalent strategic behavior against the same eval scenarios, not identical packaging, wording, or tool calls. A successful upload is not proof of availability or invocation. Complete the installation preflight in `evals/compatibility.md` before evaluating automatic selection or coaching quality.
+
+## Verified execution status
+
+The native core loads in ChatGPT Work and has completed bounded coaching smoke tests. All eight canonical skills have been saved as personal skills. This is not a verified complete-plugin installation or proof of ordinary ChatGPT/iPhone availability. See the [Work validation record](evals/work-validation-2026-09-21.md) and [installation boundaries](docs/chatgpt-installation.md).
 
 ## V1
 

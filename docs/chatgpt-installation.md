@@ -1,38 +1,50 @@
 # ChatGPT installation
 
-## Status
+## Verified status — 2026-09-21
 
-Version 0.1.1 adds a repository marketplace and explicit OpenAI display metadata. The eight skill instructions are unchanged. The repository root is the complete skills-only plugin; no MCP server, hosted backend, or credential is required by this package.
+The existing core `strategy-factory` personal skill was discoverable and its full instructions loaded in ChatGPT Work. Its title/display metadata were aligned with the repository. The seven specialists were then installed through Work's native personal-skill workflow. All eight saved instruction files match repository version 0.1.1.
 
-**This is packaging work, not a verified fix for standalone-skill launch failures.** Local metadata checks are not a ChatGPT runtime test. No public directory submission or account installation has been performed.
+**This verifies a native skill path in Work, not the complete plugin or ordinary ChatGPT/iPhone availability.** The current conversation's cached skill reader did not expose the newly installed specialist tested. Fresh-session specialist discovery remains unverified.
 
-## Documented local test route
+See [the execution record](../evals/work-validation-2026-09-21.md) for evidence, coaching smoke tests, and limitations. No coaching instructions or package version changed.
 
-OpenAI documents repository marketplaces for Work mode or Codex in the ChatGPT desktop app. With Codex CLI available, register this repository as a marketplace source:
+## Native personal skills
+
+Work's built-in skill-creator provides a supported route to create, update, and install personal skills. In this session it could update the existing core in place and install the remaining canonical `skills/*/SKILL.md` files. Installation is separate from the repository plugin manifest.
+
+Maintain the methodology in this repository. Imported copies are deployment artifacts: changing GitHub alone does not update them. Do not create host-specific copies of the coaching method.
+
+The earlier standalone-upload launch failure remains unexplained. Successful loading in Work does not identify its cause. The observed naming mismatch is not evidence of causation.
+
+## Complete plugin: documented local route, not executed here
+
+The root `plugin.json`, shared `skills/`, and `.agents/plugins/marketplace.json` follow the documented package structure. The package is skills-only and does not require an MCP server.
+
+OpenAI documents this marketplace-registration command:
 
 ```sh
 codex plugin marketplace add phinneywood/strategy-factory --ref main
 ```
 
-Restart the ChatGPT desktop app. In its supported local Work/Codex interface, open the Plugins Directory, select `strategy-factory-local`, and install `strategy-factory`. The marketplace points to `./`, the repository root, which contains the manifest and all eight skills. The path is relative to the marketplace root, not to `.agents/plugins/`.
+This command registers a source; it does not by itself prove installation or invocation. The documented local route then uses the supported ChatGPT desktop plugin directory to select the marketplace and install the plugin.
 
-The marketplace's required authentication policy is metadata. This skills-only package has no connected service to authenticate.
+The Work environment tested here had no `codex` executable, no exposed plugin-creator skill, and no custom repository-registration action. The command was not executed. Installing a CLI into this remote environment would not establish ordinary-chat or iPhone availability.
 
-Do not upload the entire repository to the standalone Skills uploader. That is a different installation route. Do not assume a local desktop installation syncs to ordinary web or iPhone chats.
+Do not upload the complete repository into the standalone-skill uploader or infer that local marketplace registration syncs to another client.
 
-## End-to-end acceptance
+## Surface boundaries and remaining check
 
-First verify the installed plugin can be selected and that its skill instructions actually load. Only then test coaching and automatic selection. Use `evals/compatibility.md` and `evals/scenarios.md`; retain client, model, package version, prompt, and observable loading evidence. A fluent response alone does not prove skill invocation.
+Current documentation describes plugin-provided skills across supported Chat and Work surfaces, including mobile. Its standalone-skill availability description is narrower. These general descriptions do not establish that this account's personal upload is available in ordinary iPhone chats.
 
-## Other distribution routes
+For the outstanding mobile check, use one new ordinary ChatGPT conversation in the same account/workspace. Check whether `strategy-factory` appears in the `@` picker and, if selected, whether its instructions actually load. Do not use coaching fluency as the loading test.
 
-Workspace publication requires the appropriate workspace administration access. Public-directory distribution requires a separate submission and review. Neither happens by committing this repository. Ordinary iPhone availability remains unverified; no plan upgrade is recommended on the basis of packaging alone.
+Workspace import and public-directory publication are separate distribution routes. Neither was performed. No plan upgrade, repeated reinstall, or additional infrastructure is justified by this evidence.
 
 ## Sources
 
 Checked 2026-09-21:
 
+- [Native skills and creation](https://learn.chatgpt.com/docs/build-skills)
+- [Skills & Plugins](https://learn.chatgpt.com/docs/skills-and-plugins)
 - [Package and marketplace documentation](https://developers.openai.com/plugins/build/plugins)
 - [Complete-plugin testing](https://developers.openai.com/plugins/deploy/connect-chatgpt)
-- [Public submission](https://developers.openai.com/plugins/deploy/submission)
-- [Standalone Skills and surface availability](https://help.openai.com/en/articles/20001066-skills-in-chatgpt)
