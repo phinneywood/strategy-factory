@@ -4,7 +4,7 @@
 
 The existing core `strategy-factory` personal skill was discoverable and its full instructions loaded in ChatGPT Work. Its title/display metadata were aligned with the repository. The seven specialists were then installed through Work's native personal-skill workflow. All eight saved instruction files match repository version 0.1.1.
 
-**This verifies a native skill path in Work, not the complete plugin or ordinary ChatGPT/iPhone availability.** The current conversation's cached skill reader did not expose the newly installed specialist tested. Fresh-session specialist discovery remains unverified.
+**This verifies a native skill path in Work, not the complete plugin or ordinary ChatGPT/iPhone availability.** The authenticated Skills page now shows all eight installed entries. A fresh Work UI session reported successful native reads for all eight, but its visible activity panel did not expose the underlying tool payloads. Directly observed core loading and reported specialist loading remain separate evidence levels.
 
 See [the execution record](../evals/work-validation-2026-09-21.md) for evidence, coaching smoke tests, and limitations. No coaching instructions or package version changed.
 
@@ -32,11 +32,15 @@ The Work environment tested here had no `codex` executable, no exposed plugin-cr
 
 Do not upload the complete repository into the standalone-skill uploader or infer that local marketplace registration syncs to another client.
 
-## Surface boundaries and remaining check
+## Surface boundaries and observed checks
 
 Current documentation describes plugin-provided skills across supported Chat and Work surfaces, including mobile. Its standalone-skill availability description is narrower. These general descriptions do not establish that this account's personal upload is available in ordinary iPhone chats.
 
-The user completed the ordinary iPhone Chat picker check after the native update: `@st` showed Study and did not show `strategy-factory`. This check did not pass; the cause remains unknown. Do not request a repeat without a material change. Investigate account/workspace plugin-registration options next. The cloud browser reached ChatGPT Plugins but was signed out, so account-specific controls require secure sign-in before inspection.
+The user completed the ordinary iPhone Chat picker check after the native update: `@st` showed Study and did not show `strategy-factory`. This check did not pass; the cause remains unknown. Do not request a repeat without a material change.
+
+After secure sign-in, the web Skills page's **Try in chat** control successfully opened Work with the core selected. Switching that draft to Chat retained the skill chip, but the submitted test searched the plugin directory and fetched GitHub instead of exposing an installed-skill read. That repository fallback is not successful native loading. A separate ordinary web Chat picker check also failed to expose the skill, including when its complete name was entered.
+
+The account views inspected exposed no custom repository import or workspace publication control. The visible Developer mode setting was described as adding unverified connectors, with MCP documentation; it was left unchanged. No supported skills-only plugin registration path was established through those controls.
 
 Workspace import and public-directory publication are separate distribution routes. Neither was performed. No plan upgrade, repeated reinstall, or additional infrastructure is justified by this evidence.
 
