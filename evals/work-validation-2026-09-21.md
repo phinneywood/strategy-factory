@@ -14,7 +14,7 @@ That existing copy differed from the canonical core only in its Markdown title. 
 
 The seven canonical specialist skills were installed through the native personal-skill workflow. Each install was saved separately and checked after reconciliation. The final stored and local `SKILL.md` content for all eight matched the pinned canonical source byte for byte.
 
-The current conversation retained cached skill resources: after the core update, `skills.read` still returned the previous heading, while the saved and filesystem copies contained the corrected heading. A direct resource read for a newly installed specialist returned “skill package is not available.” New-session discovery of those seven specialists is therefore not verified. The current session can read their installed files directly.
+The current conversation retained cached skill resources: after the core update, `skills.read` still returned the previous heading, while the saved and filesystem copies contained the corrected heading. A direct resource read for a newly installed specialist returned “skill package is not available.” At that point, new-session discovery of those seven specialists was not verified. The later direct-reader check below resolves this Work-only gap.
 
 ## Validation gates
 
@@ -27,7 +27,7 @@ The current conversation retained cached skill resources: after the core update,
 | Marketplace | Static checks passed | Plugin identity, `./` source path, root manifest, policy fields, and eight skills were consistent. |
 | Native skill storage | Passed | Existing core updated and seven specialists saved; stored contents verified after reconciliation. |
 | Core Work availability/loading | Passed | Initial session catalog plus actual `skills.list` and `skills.read` results. |
-| New specialist catalog loading | Reported success; tool results not independently visible | A fresh Work UI session reported catalog discovery and successful reads for all eight. Its expanded activity panel exposed no underlying reader results; this does not upgrade the direct-evidence gate. |
+| New specialist catalog loading | Passed in Work | A subsequent turn exposed all eight in the native catalog. Eight direct `skills.read` calls returned complete instructions and their declared resources, without errors or pagination. |
 | iPhone Chat picker | Did not pass | User screenshot shows `@st` with Study as the only visible suggestion; no `strategy-factory` entry. This does not establish the cause. |
 | Try in chat after update | Web launch passed | Opens a Work draft with the selected skill. This is launch evidence, not instruction-loading evidence; iPhone launch remains unverified. |
 | Complete plugin install | Not verified | No custom repository-registration tool or plugin-creator skill exposed; `codex` absent from PATH; directory search found no matching plugin. |
@@ -122,3 +122,9 @@ The user's existing account and existing Strategy factory project were observed 
 No additional package changes, ZIP upload, account upgrade, security-setting change, workspace publication, or public-directory submission resulted from these checks. The full plugin remains uninstalled/unverified. The directly evidenced core execution path remains Work; ordinary Chat and iPhone instruction loading remain unresolved.
 
 A screenshot of all eight installed entries was saved with the user's project evidence. Private conversation URLs and unrelated account details are intentionally excluded from this public repository report.
+
+## Direct-reader follow-up
+
+A subsequent turn in this Work conversation exposed all eight installed skills in the native skill catalog. Direct `skills.read` calls for the core and each of the seven specialists returned complete `SKILL.md` contents, their declared resources, and `next_cursor: null`. The core returned its corrected lowercase heading. No GitHub fetch or filesystem substitute was used for these loading checks.
+
+This closes the previously limited Work specialist-loading evidence gate. It is direct tool-return evidence for all eight, independent of the fresh browser conversation's self-report. It does not verify automatic selection, complete-plugin registration, ordinary Chat, or iPhone availability. The next product validation is a real coaching case in Work; additional packaging changes are not supported by the current evidence.
