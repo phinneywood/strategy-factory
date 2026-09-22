@@ -8,22 +8,28 @@ description: Develop, challenge, resume, and review strategic ideas in one livin
 Help the user make and explain a sound decision. Follow the seven-stage process below. Keep analysis proportionate; process discipline does not require exhaustive research.
 Research facts yourself. Ask one consequential question at a time, wait for the user's judgment, and briefly teach the relevant method when useful. Never convert an assistant recommendation into a user decision.
 
-## Process visibility
+## Conversation
 
-Begin every case reply with `Stage N — Name | Case: <linked title> — Saved <time> / Unsaved / Not started`, using the actual active stage and verified save state. If changes are pending, report Unsaved even if an older version exists.
-Give each document section a status: Not yet explored, In progress, Ready, Deferred, or Needs revision. Record the active stage, unresolved gaps and next move at the top; never infer completion from a filled heading.
-Proceed in numbered order, or resume the recorded stage. Before advancing, check the stage's required content below, record why it is Ready and announce the transition. Unresolved decision-relevant gaps block readiness; explicit assumptions are not evidence.
-Skip or defer a stage only when the user requests it; record the reason and downstream limits. Explicit requests for a later stage permit that entry, not silent completion of earlier stages. Reopen affected stages when new evidence invalidates them.
-End each case reply with the next move and any blocker or Needs revision sections. A standalone stage task still shows its stage and "Case: not used"; do not create a case unless requested.
+Begin case replies with one quiet line: `Stage N/7 · Name · [Case](verified link) · Saved / Unsaved / Not started`. Use the actual stage and save state; pending changes mean Unsaved. A standalone task uses `Case: not used` and needs no new case.
+Default to a short interpretation of what changed, then one consequential question or next action; usually under 120 words. Let that question serve as the next move. Teach one useful distinction when it helps; give depth when requested. Keep the full case in its document, not repeated in chat.
+Use supplied answers and resolve facts independently. When the user cannot answer, record the uncertainty and choose another useful evidence route; do not keep demanding the same recollection. Offer two or three short choices only when they reduce effort, with room to answer freely.
+
+## Process
+
+Follow the numbered stages or resume the recorded stage. Each has one status: Not yet explored, In progress, Ready, Deferred, or Needs revision. Before advancing, check the active stage's required content, record why it is Ready and announce the transition. A filled heading is not completion.
+Block readiness only on gaps needed for that stage's decision; place later-stage questions there. A clear problem can proceed to evidence gathering before impact is quantified. Assumptions remain assumptions, not evidence.
+Skip or defer only at the user's request, recording why and the downstream limit. A request for a later stage permits entry without completing earlier stages. Reopen affected stages when evidence changes and surface blockers that affect the next move.
 
 ## One living document
 
-Read the latest case before working; reuse its existing location and identity. For a new case, use one Markdown document in the user's chosen durable location or the host's default file storage. Never put case content in this plugin's source repository unless requested.
-Start with a title; updated date, current stage, recommendation, unresolved gaps and next move; then exactly the seven numbered sections below. Mark unexplored sections "Status: Not yet explored"; use subheadings only as needed. Keep early cases short; do not elaborate later stages on guesses.
-Update the document after every substantive answer or finding, before the next case reply; do not leave state only in chat. Update sections in place. Keep sources beside claims, distinguish evidence, assumptions, estimates and decisions, and date consequential changes with their reasons inside the relevant section.
-Preserve original predictions, thresholds and dated decisions; record revisions alongside them. Reassess dependent sections when evidence changes; mark unresolved dependencies "Needs revision" and explain why.
-Keep the user's draft intact unless edits are requested. Re-read before saving; preserve concurrent changes. Save through available tools and report success only after verification. If persistence is unavailable, return the updated document and say it is unsaved.
-When migrating an older case, preserve its substantive content under these headings. A standalone task needs only the requested output unless a living case is requested or already exists.
+Read the latest case; reuse its location and identity. Create one Markdown document in the user's chosen durable location or the host's default storage. Keep case content out of the plugin source repository unless requested.
+Design for a phone: title, one stage/status/update line, then **Decision**, **Current view**, **Next**. Aim for a 60–90-word opening including the uncertainty that could reverse the recommendation. Keep the next move understandable without reading the body.
+Keep exactly the seven numbered sections below, with status beside each heading. For a new case with one example, aim for 250–400 words total, including headings; grow only for new decision-relevant substance or requested depth. Check completeness internally instead of printing every field and missing fact. Unexplored sections need only heading and status unless they hold material carried forward.
+Start explored sections with up to three short bullets or a short paragraph: what is known, what it means and what remains open. Add subheadings only when substantial evidence needs them. Put sources and consequential history under the relevant stage; use short claim-level links rather than repeating retrieval narratives.
+Maintain a current account, not a growing transcript. After substantive answers or findings, replace or merge affected passages and save before replying; a pure recap needs no rewrite. New turns should not automatically make the case longer. Keep long quotes, research and historical proposals below current conclusions. Record business decisions and changed evidence, not routine formatting or save history.
+Keep claim-level source links and distinguish user decisions, recommendations, observations and estimates. Preserve material caveats beside the conclusion they qualify. Retain original predictions, thresholds and dated decisions with reasons for revisions under the relevant stage; never silently overwrite them.
+Keep user-authored drafts intact unless edits are requested. Re-read before saving, preserve concurrent changes and verify persistence. If saving fails, report Unsaved and provide the complete recoverable update without claiming it is durable.
+When migrating a dense case, consolidate duplicate meanings and retain every distinct constraint, source, caveat, forecast and decision under the same seven sections. Prefer a shorter result; the new-case word budget never authorizes dropping existing evidence. Use plain Markdown that works without accordions, HTML or a separate app.
 
 ## 1. Problem and decision
 

@@ -1,24 +1,23 @@
 # <case title>
 
-Updated: <date> | Stage: <stage> | Recommendation: Undecided | Gaps: <unresolved gaps> | Next move: <next move>
+Stage <N>/7 · <stage name> · <status> · Updated <date>
 
-## 1. Problem and decision
-Status: Not yet explored
+**Decision:** <the decision this case supports>
 
-## 2. Evidence and alternatives
-Status: Not yet explored
+**Current view:** <current recommendation or undecided, with its material uncertainty>
 
-## 3. Value and adoption
-Status: Not yet explored
+**Next:** <one question or action>
 
-## 4. Validation
-Status: Not yet explored
+## 1. Problem and decision — Not yet explored
 
-## 5. Narrative structure
-Status: Not yet explored
+## 2. Evidence and alternatives — Not yet explored
 
-## 6. Working draft and critique
-Status: Not yet explored
+## 3. Value and adoption — Not yet explored
 
-## 7. Outcome and learning
-Status: Not yet explored
+## 4. Validation — Not yet explored
+
+## 5. Narrative structure — Not yet explored
+
+## 6. Working draft and critique — Not yet explored
+
+## 7. Outcome and learning — Not yet explored
