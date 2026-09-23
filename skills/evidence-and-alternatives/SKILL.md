@@ -9,7 +9,7 @@ Own Stage 2: **Evidence and alternatives**.
 
 ## Entry
 
-Stage 1 must be `Complete`. Otherwise do not perform Stage 2 research; route to Stage 1.
+Read the current Strategy Factory case first. If none exists, route to Stage 1 rather than creating a Stage 2-only case. Stage 1 must be `Complete`. Otherwise do not perform Stage 2 research; route to Stage 1.
 
 ## Method
 
