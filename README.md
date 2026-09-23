@@ -1,33 +1,43 @@
 # strategy-factory
 
-A small, source-based strategic coach for ChatGPT Work. One living Markdown document per case; no executable code, database, server, or model-specific prompt machinery.
+A source-based strategic coach for ChatGPT Work built as a strict seven-stage state machine. One living Markdown document carries the case; one stage skill owns each section, method, and exit gate.
 
 ## Use
 
-Ask `@strategy-factory` to develop an idea or resume its existing document. It reads the latest case, works on the next useful decision, and updates that same document.
-The host supplies research and durable file access. A conversation alone is not saved state. Keep personal cases in your chosen storage, not this plugin repository unless explicitly intended.
+Ask `@strategy-factory` to develop or resume an idea. The coordinator reads the case, finds the earliest incomplete stage, and delegates to that stage's skill.
 
-## One document, seven stages
+Later stages cannot start early. A filled section or user request to skip ahead does not satisfy a gate. The active stage skill must pass its own exit criteria, save the result, and verify persistence before the next stage unlocks.
 
-1. Problem and decision — Matt Pocock's grilling, adapted for one question at a time.
-2. Evidence and alternatives — primary-source research and proportionate Green Book options appraisal.
-3. Value and adoption — Green Book Five Case Model; optional Amazon Working Backwards PR/FAQ.
-4. Validation — Strategyzer Test Card.
-5. Narrative structure — Moghe's *Nail your narrative* or Amazon decision memo practice.
-6. Working draft and critique — Ptacek's *How To Write With An LLM*.
-7. Outcome and learning — Magenta Book evaluation.
+## Seven stages
 
-The [core skill](skills/strategy-factory/SKILL.md) contains the complete method and source links. These are our adaptations, not author-endorsed skills or demonstrated plugin effectiveness.
-Follow stages in order or resume the recorded stage. Every case reply identifies its stage, linked document and verified save state. Readiness checks and announced transitions are mandatory; defer or enter a later stage only when requested. Each section carries a status, and substantive answers are saved before the next reply. Forecasts and decisions retain their history; changed evidence triggers review of dependent sections. Writing defaults to critique; explicit drafting requests switch to assisted drafting.
+1. **Problem and decision** → `sharpen-idea`
+2. **Evidence and alternatives** → `evidence-and-alternatives`
+3. **Value and adoption** → `model-value`
+4. **Validation** → `design-experiment`
+5. **Narrative structure** → `form-narrative`
+6. **Working draft and critique** → `write-with-an-llm`
+7. **Outcome and learning** → `review-outcome`
+
+The coordinator owns routing and the shared case contract. It does **not** own stage methods or exit criteria.
+
+Stage 1 also sets the decision-specific proof bar. Validation is therefore proportional to the commitment being sought: a pilot-authorization decision can pass with a credible executable test plan, while a scale or irreversible commitment generally requires observed evidence.
+
+## Case states
+
+Stages use only `Locked`, `In progress`, `Complete`, and `Needs revision`. An active case has one `In progress` stage; every later stage is `Locked`.
+
+A substantive upstream change reopens the earliest affected stage and locks downstream work. A deliberate no-go/defer may close the case without forcing irrelevant later stages.
+
+The case stays readable on a phone: a compact opening, seven sections, and a one-line gate rationale for completed stages. Full gate checklists live in the skills rather than the artifact.
 
 ## Package
 
-The core is self-contained. Existing named specialists and `write-with-an-llm` are short entry points into it; they require the core to be readable. Do not install those entry points alone.
-[Case template](cases/templates/case.md) · [Acceptance scenarios](evals/scenarios.md) · [0.2.1 release record](evals/release-0.2.1.md).
+The repository contains the coordinator plus seven stage skills. Stage 2 combines framework discovery, prior art, and options appraisal in one skill because they share one section and one gate.
 
-Native Work installation and portable source packaging are separate. Complete-plugin registration and ordinary Chat/iOS execution are not implied by Work tests. Earlier verification records apply only to the releases they name.
-There is no automatic upstream update service. Review source changes when they are relevant; keep model behavior flexible rather than prescribing a script.
+[Case template](cases/templates/case.md) · [Acceptance scenarios](evals/scenarios.md)
+
+Native Work installation and portable source packaging are separate. Complete-plugin registration and ordinary Chat/iOS execution are not implied by repository validation.
 
 ## License
 
-Apache-2.0 for this package; linked works retain their own rights. Method instructions are concise original adaptations. Naming uses lowercase hyphenated skill names.
+Apache-2.0 for this package; linked works retain their own rights. Method instructions are concise original adaptations.
