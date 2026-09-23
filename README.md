@@ -20,6 +20,8 @@ Later stages cannot start early. A filled section or user request to skip ahead 
 
 The coordinator owns routing and the shared case contract. It does **not** own stage methods or exit criteria.
 
+Stage 1 also sets the decision-specific proof bar. Validation is therefore proportional to the commitment being sought: a pilot-authorization decision can pass with a credible executable test plan, while a scale or irreversible commitment generally requires observed evidence.
+
 ## Case states
 
 Stages use only `Locked`, `In progress`, `Complete`, and `Needs revision`. An active case has one `In progress` stage; every later stage is `Locked`.
