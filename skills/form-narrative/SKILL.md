@@ -9,7 +9,7 @@ Own Stage 5: **Narrative structure**.
 
 ## Entry
 
-Stages 1–4 must be `Complete`. Otherwise do not structure the pitch or memo; route to the earliest incomplete predecessor.
+Read the current Strategy Factory case first. If none exists, route to Stage 1. Stages 1–4 must be `Complete`. Otherwise do not structure the pitch or memo; route to the earliest incomplete predecessor.
 
 ## Method
 
