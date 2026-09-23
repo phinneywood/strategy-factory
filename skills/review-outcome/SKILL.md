@@ -9,7 +9,7 @@ Own Stage 7: **Outcome and learning**.
 
 ## Entry
 
-Stages 1–6 must be `Complete`. Real outcome evidence must exist. If implementation has not produced observable results yet, Stage 7 may remain `In progress` but must not invent outcomes.
+Read the current Strategy Factory case first. If none exists, route to Stage 1. Stages 1–6 must be `Complete`. Real outcome evidence must exist. If implementation has not produced observable results yet, Stage 7 may remain `In progress` but must not invent outcomes.
 
 ## Method
 
