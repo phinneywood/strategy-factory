@@ -9,7 +9,7 @@ Own Stage 3: **Value and adoption**.
 
 ## Entry
 
-Stages 1 and 2 must both be `Complete`. Otherwise do not perform Stage 3 analysis; route to the earliest incomplete predecessor.
+Read the current Strategy Factory case first. If none exists, route to Stage 1. Stages 1 and 2 must both be `Complete`. Otherwise do not perform Stage 3 analysis; route to the earliest incomplete predecessor.
 
 ## Method
 
