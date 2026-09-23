@@ -9,7 +9,7 @@ Own Stage 6: **Working draft and critique**.
 
 ## Entry
 
-Stages 1–5 must be `Complete`. Otherwise do not draft the final narrative; route to the earliest incomplete predecessor.
+Read the current Strategy Factory case first. If none exists, route to Stage 1. Stages 1–5 must be `Complete`. Otherwise do not draft the final narrative; route to the earliest incomplete predecessor.
 
 ## Method
 
