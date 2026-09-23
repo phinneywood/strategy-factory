@@ -9,7 +9,7 @@ Own Stage 1: **Problem and decision**.
 
 ## Entry
 
-Stage 1 has no predecessor. In an active case it must be the first stage worked. Do not work later-stage content while this gate is open.
+Read the current Strategy Factory case first. If none exists, create the standard seven-section case with Stage 1 `In progress` and Stages 2–7 `Locked`. Stage 1 has no predecessor. Do not work later-stage content while this gate is open.
 
 ## Method
 
