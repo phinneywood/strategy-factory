@@ -1,8 +1,8 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "strategy-factory",
-  "version": "0.2.2",
-  "description": "Develop strategic judgment through source-based methods and one living case document.",
+  "version": "0.3.0",
+  "description": "Develop strategic judgment through seven sequential, stage-owned gates in one living case document.",
   "author": {
     "name": "phinneywood"
   },
@@ -12,12 +12,12 @@
     "com.openai": {
       "interface": {
         "displayName": "strategy-factory",
-        "shortDescription": "Develop ideas and practice strategic judgment.",
-        "longDescription": "Seven stages in one living document, from questioning and evidence through value, validation, narrative, author-led writing and outcome review. Adapted from named practitioner sources.",
+        "shortDescription": "Develop ideas through strict sequential strategy gates.",
+        "longDescription": "Seven sequential stages in one living document. Each stage skill owns its method and exit criteria; later stages remain locked until prior gates pass and save successfully.",
         "developerName": "phinneywood",
         "category": "Productivity",
         "defaultPrompt": [
-          "Use strategy-factory to develop or resume my idea in one living case document."
+          "Use strategy-factory to develop or resume my idea from the earliest incomplete stage."
         ]
       }
     }
