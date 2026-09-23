@@ -23,7 +23,7 @@ Each stage has one status: `Locked`, `In progress`, `Complete`, or `Needs revisi
 
 1. Read the latest case before doing work. For a new case, create the standard seven-section document with Stage 1 `In progress` and Stages 2–7 `Locked`.
 2. The active stage is the earliest stage that is not `Complete`. If a completed upstream stage becomes invalid, mark the earliest affected stage `Needs revision`, lock every downstream stage, then make that stage `In progress` when work resumes.
-3. Load and follow the active stage skill. A request for a later stage does not bypass this rule. Briefly state the dependency and continue with the earliest incomplete stage.
+3. Load and follow the active stage skill. A request for a later stage does not bypass this rule. Briefly state the dependency and continue with the earliest incomplete stage. If the required stage skill cannot be loaded, stop and report the dependency failure rather than improvising its method or gate.
 4. Only the active stage skill may mark its stage `Complete`, and only after all of its exit criteria pass. Check structural and factual criteria directly. When completion depends on a substantive judgment, use the user's stated decision; do not convert an assistant recommendation into the user's decision and do not add a separate approval ceremony when the user has already made the judgment.
 5. Save and verify the completed stage before unlocking its successor. If persistence fails, report `Unsaved` and keep the successor `Locked`.
 6. After verified completion, set the successor to `In progress` and keep all later stages `Locked`.
@@ -40,12 +40,14 @@ Keep chat short and decision-focused. Default to a brief interpretation and one 
 
 ## Case document
 
-Maintain one Markdown document per case. Keep exactly seven numbered stage sections plus a compact opening:
+Maintain one Markdown document per case in the user's chosen durable location or the host's default storage. Keep case content out of the plugin source repository unless the user explicitly wants it there. Keep exactly seven numbered stage sections plus a compact opening:
 
 - `Case status`
 - `Decision`
 - `Current view`
 - `Next`
+
+Design for phone scanning: keep the opening to roughly 60–90 words, keep unexplored or locked sections to headings only, and start explored sections with at most three short bullets or a short paragraph unless more detail is decision-relevant. Maintain a current account rather than a transcript; new turns should not automatically make the case longer.
 
 Do not print full gate checklists in the case. The stage skill owns the checklist. When a stage completes, add one short `**Gate:** Passed — ...` rationale under that stage. When blocked, record only the decision-relevant gap.
 
