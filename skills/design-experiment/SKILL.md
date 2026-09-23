@@ -9,7 +9,7 @@ Own Stage 4: **Validation**.
 
 ## Entry
 
-Stages 1–3 must be `Complete`. Otherwise do not perform Stage 4 work; route to the earliest incomplete predecessor.
+Read the current Strategy Factory case first. If none exists, route to Stage 1. Stages 1–3 must be `Complete`. Otherwise do not perform Stage 4 work; route to the earliest incomplete predecessor.
 
 ## Method
 
