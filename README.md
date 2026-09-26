@@ -1,4 +1,12 @@
-# strategy-factory
+# Strategy Factory
+
+**An experimental workflow for turning an idea into an evidence-based decision.**
+
+Strategy Factory guides a case from problem framing through alternatives, value, validation, narrative, and outcome review. It is a ChatGPT Work skills project, with explicit stage gates and a durable case document.
+
+[About the builder](https://antonioskilton.com) · [Case template](cases/templates/case.md) · [Acceptance scenarios](evals/scenarios.md)
+
+## How it works
 
 A source-based strategic coach for ChatGPT Work built as a strict seven-stage state machine. One living Markdown document carries the case; one stage skill owns each section, method, and exit gate.
 
