@@ -46,6 +46,10 @@ The repository contains the coordinator plus seven stage skills. Stage 2 combine
 
 Native Work installation and portable source packaging are separate. Complete-plugin registration and ordinary Chat/iOS execution are not implied by repository validation.
 
+## Optional companion migration
+
+The [legacy prior-art companion source](companions/README.md) is staged separately from the current package. Its delegation contract must be reconciled with the current Stage 2 gate before activation. The main package remains the coordinator plus seven stage skills.
+
 ## License
 
 Apache-2.0 for this package; linked works retain their own rights. Method instructions are concise original adaptations.

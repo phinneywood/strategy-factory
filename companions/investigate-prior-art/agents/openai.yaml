@@ -1,0 +1,13 @@
+interface:
+  display_name: investigate-prior-art
+  short_description: Research implementations and alternatives before building.
+  default_prompt: Use $investigate-prior-art to help me develop my strategic case.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true
